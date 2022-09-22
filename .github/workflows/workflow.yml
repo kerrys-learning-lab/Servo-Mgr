@@ -1,0 +1,13 @@
+name: ROS2 Library
+
+on: [push, workflow_dispatch]
+
+jobs:
+  library-workflow:
+    uses: kerrys-learning-lab/.github/.github/workflows/ros2-library.workflow.yml@main
+    with:
+      library_name: servo_mgr
+    secrets:
+      actor_name: ${{ secrets.KERRYS_LEARNING_LAB_ACTOR }}
+      actor_token: ${{ secrets.KERRYS_LEARNING_LAB_TOKEN }}
+      actor_email: ${{ secrets.KERRYS_LEARNING_LAB_EMAIL }}
