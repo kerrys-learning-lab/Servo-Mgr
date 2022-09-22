@@ -1,0 +1,7 @@
+uint8  id
+string device_file
+int32  address
+bool   auto_initialize true
+---
+bool   successful true
+string message    ""
